@@ -1,0 +1,6 @@
+services:
+  myworld:
+    image: ghcr.io/ca1ebd/myworld:latest
+    container_name: myworld
+    stdin_open: true
+    tty: true

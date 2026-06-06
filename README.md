@@ -2,16 +2,34 @@
 
 My personal containerized environment. Ubuntu-based, with vim and [updateme](https://github.com/ca1ebd/updateme) pre-installed.
 
-## Pull
+## Quick Install
+
+Run this one-liner to download the Compose file and get instructions:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/ca1ebd/myworld/main/install.sh | sh
+```
+
+This downloads `docker-compose.yml` to `~/myworld/` and prints the command to launch the container.
+
+## Manual Setup
+
+### Pull
 
 ```bash
 docker pull ghcr.io/ca1ebd/myworld:latest
 ```
 
-## Run
+### Run (Docker Compose)
 
 ```bash
-docker run -it ghcr.io/ca1ebd/myworld:latest
+docker compose run --rm myworld
+```
+
+### Run (plain Docker)
+
+```bash
+docker run -it --rm ghcr.io/ca1ebd/myworld:latest
 ```
 
 ## What's inside
