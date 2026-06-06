@@ -25,6 +25,6 @@ ENV PATH="/home/dev/.local/bin:${PATH}"
 
 RUN mkdir -p /home/dev/Development
 
-RUN echo 'export PS1="\u@\h:\w\$ "' >> /home/dev/.bashrc
+RUN echo 'export PS1="dev@myworld:\w\$ "' >> /home/dev/.bashrc
 
 CMD ["/bin/bash"]
