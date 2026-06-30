@@ -10,6 +10,7 @@ RUN apt-get update && apt-get install -y \
     ca-certificates \
     git \
     sudo \
+    ripgrep \
     && rm -rf /var/lib/apt/lists/*
 
 RUN useradd -m -s /bin/bash dev \
